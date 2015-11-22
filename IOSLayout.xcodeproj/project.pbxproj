@@ -23,6 +23,8 @@
 		61C7000B1C011FC9007BB614 /* window.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C700051C011FC9007BB614 /* window.png */; };
 		61C7000E1C012168007BB614 /* ac.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C7000C1C012168007BB614 /* ac.png */; };
 		61C7000F1C012168007BB614 /* sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C7000D1C012168007BB614 /* sign.png */; };
+		61C700111C01588F007BB614 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C700101C01588F007BB614 /* AudioToolbox.framework */; };
+		61C700131C021059007BB614 /* ErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C700121C021059007BB614 /* ErrorList.swift */; };
 		61C7FFF71C001DAC007BB614 /* PlanSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C7FFF61C001DAC007BB614 /* PlanSelector.swift */; };
 		61C7FFF91C001F72007BB614 /* floorplan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C7FFF81C001F72007BB614 /* floorplan.jpg */; };
 		61C7FFFB1C002588007BB614 /* FileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C7FFFA1C002588007BB614 /* FileList.swift */; };
@@ -70,6 +72,8 @@
 		61C700051C011FC9007BB614 /* window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = window.png; path = IOSLayout/window.png; sourceTree = "<group>"; };
 		61C7000C1C012168007BB614 /* ac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ac.png; path = IOSLayout/ac.png; sourceTree = "<group>"; };
 		61C7000D1C012168007BB614 /* sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sign.png; path = IOSLayout/sign.png; sourceTree = "<group>"; };
+		61C700101C01588F007BB614 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		61C700121C021059007BB614 /* ErrorList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorList.swift; sourceTree = "<group>"; };
 		61C7FFF61C001DAC007BB614 /* PlanSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanSelector.swift; sourceTree = "<group>"; };
 		61C7FFF81C001F72007BB614 /* floorplan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = floorplan.jpg; path = IOSLayout/floorplan.jpg; sourceTree = "<group>"; };
 		61C7FFFA1C002588007BB614 /* FileList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileList.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C700111C01588F007BB614 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,7 @@
 		611AB2661BFEB29B00A6EB9B = {
 			isa = PBXGroup;
 			children = (
+				61C700101C01588F007BB614 /* AudioToolbox.framework */,
 				61C7000C1C012168007BB614 /* ac.png */,
 				61C7000D1C012168007BB614 /* sign.png */,
 				61C700001C011FC9007BB614 /* handicap.png */,
@@ -137,6 +143,7 @@
 				611AB2721BFEB29B00A6EB9B /* AppDelegate.swift */,
 				611AB2741BFEB29B00A6EB9B /* ViewController.swift */,
 				61C7FFFC1C00EE40007BB614 /* AddFunctional.swift */,
+				61C700121C021059007BB614 /* ErrorList.swift */,
 				611AB2761BFEB29B00A6EB9B /* Main.storyboard */,
 				61C7FFFE1C00EED0007BB614 /* AddElement.xib */,
 				61C7FFFA1C002588007BB614 /* FileList.swift */,
@@ -310,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61C7FFFD1C00EE40007BB614 /* AddFunctional.swift in Sources */,
+				61C700131C021059007BB614 /* ErrorList.swift in Sources */,
 				611AB2751BFEB29B00A6EB9B /* ViewController.swift in Sources */,
 				61C7FFFB1C002588007BB614 /* FileList.swift in Sources */,
 				61C7FFF71C001DAC007BB614 /* PlanSelector.swift in Sources */,
