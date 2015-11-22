@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var planView: UIView!
     var planPDF = UIImage(named: "floorplan.jpg")
-    var planImage = UIImageView()
     var currentType = ("plumbing.png")
     func addGestures(view:UIView){
         view.addGestureRecognizer(removeTextGesture)
@@ -124,7 +123,8 @@ class ViewController: UIViewController {
         let btn = sender as! UIButton
         let img = btn.imageView
         img?.layer.borderColor = UIColor.redColor().CGColor
-        img?.layer.borderWidth = 2
+        img?.layer.borderWidth = 6
+        
        
 
     }
@@ -157,6 +157,9 @@ class ViewController: UIViewController {
         customView.addSubview(iconImage)
         customView.addGestureRecognizer(removeTextGesture)
         customView.addGestureRecognizer(expandedView)
+        if type == "ac.png"{
+            customView.backgroundColor = UIColor.redColor()
+        }
         return customView
     }
     
@@ -171,14 +174,14 @@ class ViewController: UIViewController {
         removeTextGesture.addTarget(self, action:"removeText")
         removeTextGesture.direction = UISwipeGestureRecognizerDirection.Right
         expandedView.addTarget(self, action: "history")
-        planImage.image = UIImage(named: "floorplan.jpg")
-        planImage.frame = CGRect(origin: planView.frame.origin, size: planView.frame.size)
-        
+        let planImage = UIImageView(frame: planView.bounds)
+        planImage.image = UIImage(named: "floorplan.gif")
         planView.addSubview(planImage)
         
         planView.addGestureRecognizer(addTextGesture)
         // Do any additional setup after loading the view, typically from a nib.
     }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

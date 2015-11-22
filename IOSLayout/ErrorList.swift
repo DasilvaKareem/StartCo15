@@ -11,6 +11,9 @@ import UIKit
 class ErrorList: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var list: UITableView!
+    var history = ["Fan coil was burnt out.Replaced new fan coil..Replacement cost: $80", "AC unit making loud noises.Filter needed to be replaced 9-4", "Filter Replaced","Customer reported AC unit making loud noises","AC does not work,Fan coil needs to be replaced", "AC unit is not repairable, a new AC unit is needed","AC Unit installed on 2nd floor" ]
+    var date = ["11-18-2015","11-16-2015","11-3-2015","10-30-15","10-15-15", "9-30-2015","9-12-2015"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,12 +29,13 @@ class ErrorList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return history.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:cells = list.dequeueReusableCellWithIdentifier("cell") as! cells
-        
-    
+        cell.error.text = history[indexPath.row]
+        cell.error.textColor = UIColor.redColor()
+        cell.date.text = date[indexPath.row]
         return cell
     }
     /*
@@ -48,5 +52,6 @@ class ErrorList: UIViewController, UITableViewDelegate, UITableViewDataSource {
 class cells: UITableViewCell {
     
     
+    @IBOutlet weak var date: UILabel!
     @IBOutlet weak var error: UILabel!
 }

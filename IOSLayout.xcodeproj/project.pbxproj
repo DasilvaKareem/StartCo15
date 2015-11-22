@@ -25,6 +25,8 @@
 		61C7000F1C012168007BB614 /* sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C7000D1C012168007BB614 /* sign.png */; };
 		61C700111C01588F007BB614 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C700101C01588F007BB614 /* AudioToolbox.framework */; };
 		61C700131C021059007BB614 /* ErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C700121C021059007BB614 /* ErrorList.swift */; };
+		61C700151C021FEC007BB614 /* floorplan.gif in Resources */ = {isa = PBXBuildFile; fileRef = 61C700141C021FEC007BB614 /* floorplan.gif */; };
+		61C700171C0229C0007BB614 /* floorplans.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 61C700161C0229C0007BB614 /* floorplans.pdf */; };
 		61C7FFF71C001DAC007BB614 /* PlanSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C7FFF61C001DAC007BB614 /* PlanSelector.swift */; };
 		61C7FFF91C001F72007BB614 /* floorplan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C7FFF81C001F72007BB614 /* floorplan.jpg */; };
 		61C7FFFB1C002588007BB614 /* FileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C7FFFA1C002588007BB614 /* FileList.swift */; };
@@ -74,6 +76,8 @@
 		61C7000D1C012168007BB614 /* sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sign.png; path = IOSLayout/sign.png; sourceTree = "<group>"; };
 		61C700101C01588F007BB614 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		61C700121C021059007BB614 /* ErrorList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorList.swift; sourceTree = "<group>"; };
+		61C700141C021FEC007BB614 /* floorplan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = floorplan.gif; path = IOSLayout/floorplan.gif; sourceTree = "<group>"; };
+		61C700161C0229C0007BB614 /* floorplans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = floorplans.pdf; path = IOSLayout/floorplans.pdf; sourceTree = "<group>"; };
 		61C7FFF61C001DAC007BB614 /* PlanSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanSelector.swift; sourceTree = "<group>"; };
 		61C7FFF81C001F72007BB614 /* floorplan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = floorplan.jpg; path = IOSLayout/floorplan.jpg; sourceTree = "<group>"; };
 		61C7FFFA1C002588007BB614 /* FileList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileList.swift; sourceTree = "<group>"; };
@@ -110,13 +114,15 @@
 		611AB2661BFEB29B00A6EB9B = {
 			isa = PBXGroup;
 			children = (
+				61C700161C0229C0007BB614 /* floorplans.pdf */,
+				61C700141C021FEC007BB614 /* floorplan.gif */,
 				61C700101C01588F007BB614 /* AudioToolbox.framework */,
 				61C7000C1C012168007BB614 /* ac.png */,
 				61C7000D1C012168007BB614 /* sign.png */,
 				61C700001C011FC9007BB614 /* handicap.png */,
-				61C700011C011FC9007BB614 /* plumbing.png */,
 				61C700021C011FC9007BB614 /* water.png */,
 				61C700031C011FC9007BB614 /* wall.png */,
+				61C700011C011FC9007BB614 /* plumbing.png */,
 				61C700041C011FC9007BB614 /* light.png */,
 				61C700051C011FC9007BB614 /* window.png */,
 				61C7FFF81C001F72007BB614 /* floorplan.jpg */,
@@ -281,10 +287,12 @@
 			files = (
 				61C7000A1C011FC9007BB614 /* light.png in Resources */,
 				611AB2801BFEB29B00A6EB9B /* LaunchScreen.storyboard in Resources */,
+				61C700151C021FEC007BB614 /* floorplan.gif in Resources */,
 				61C7000F1C012168007BB614 /* sign.png in Resources */,
 				61C7000B1C011FC9007BB614 /* window.png in Resources */,
 				61C700071C011FC9007BB614 /* plumbing.png in Resources */,
 				61C700091C011FC9007BB614 /* wall.png in Resources */,
+				61C700171C0229C0007BB614 /* floorplans.pdf in Resources */,
 				61C7000E1C012168007BB614 /* ac.png in Resources */,
 				61C700061C011FC9007BB614 /* handicap.png in Resources */,
 				61C7FFF91C001F72007BB614 /* floorplan.jpg in Resources */,

@@ -8,11 +8,17 @@
 
 import UIKit
 
-class FileList: UITableViewController {
-    var example = ["Floor 1", "Floor 2", "Floor 3", "Floor 4"]
+class FileList: UITableViewController, UISplitViewControllerDelegate {
+    var example = ["Floor A1", "Floor A2", "Floor A3", "Floor A4"]
+    var example2 = ["Floor B1", "Floor B2", "Floor B3", "Floor B4"]
+    var example3 = ["Floor C1", "Floor C2", "Floor C3", "Floor C4"]
+    
+    var detailViewController:ViewController? = nil
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
+        self.navigationController?.title = "Floors"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,20 +35,50 @@ class FileList: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 3
+    }
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Building A"
+        }
+        if section == 1{
+            return "Building B"
+        }
+        if section == 2 {
+            return "Building C"
+        }
+        return "Building D"
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return example.count
     }
+    override
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        navigationController?.dismissViewControllerAnimated(true, completion: {
+            Void in
+             self.navigationController?.pushViewController(ViewController(), animated: true)
+        })
+       
+        
+        
 
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-
+        let section = indexPath.section
         // Configure the cell...
-        cell.textLabel?.text = example[indexPath.row]
+        if section == 0 {
+            cell.textLabel?.text = example[indexPath.row]
+        }
+        if section == 1{
+            cell.textLabel?.text = example2[indexPath.row]
+        }
+        if section == 2 {
+            cell.textLabel?.text = example3[indexPath.row]
+        }
 
         return cell
     }
